@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <!-- Animate on Scroll Start -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Animate on Scroll End -->
+    <title>Bronco Motors Buy Centers</title>
+    <style>
+        * {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+
+        /* Header/Hero Styles */
+        #hero {
+            height: 400px;
+            width: 100%;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0;
+        }
+        #hero img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-height: 100%;
+            min-width: 100%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        #hero h1 {
+            position: relative;
+            margin-top: 125px;
+            margin-bottom: 0;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 60px;
+            color: #fff;
+            text-align: center;
+        }
+        #hero h2 {
+            position: relative;
+            margin-top: 0;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 400; 
+            font-size: 60px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Centers Section Styles */
+        #centers {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #centers #original, #fairview, #nampa {
+            margin: 1.5rem;
+            padding: 2rem;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        }
+        #centers h2 {
+            margin: 0 0 0 1rem;
+        }
+        #centers p {
+            margin: .5rem 0 .5rem 1rem;
+        }
+        #centers .location a {
+            margin: .5rem 0 .5rem 1rem;
+        }
+        .location, .contact, .hours {
+            display: flex;
+        }
+        .centers-content {
+            margin-bottom: 1rem;
+        }
+
+        /* Buy Cars Section Styles */
+        #buy-cars {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 14% 50px 14%;
+            padding: 2rem;
+            border-top: 1px solid #f04f23;
+            border-bottom: 1px solid #f04f23;
+        }
+        #buy-cars h1 {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            margin: 0 0 .5rem 25%;
+        }
+        #buy-cars p {
+            margin: 0 0 0 25%;
+            line-height: 1.5rem;
+        }
+
+        /* Steps Styles */
+        #steps {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #stepsheader {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+        .orange {
+            font-size: 36px;
+            color: #f04f23;
+        }
+        #steps div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: 0 3rem 50px 3rem;
+        }
+        #steps img {
+            height: 200px;
+            width: 200px;
+            padding: 0 1rem 1rem 1rem;
+        }
+        #steps h1 {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            padding-bottom: 1rem;
+        }
+        #steps p {
+            line-height: 1.5rem;
+        }
+        #step2 {
+            border-left: 1px solid #f04f23;
+            border-right: 1px solid #f04f23;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 975px) {
+            #steps {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #step2 {
+                border: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            #centers {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #buy-cars {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #buy-cars h1, #buy-cars p {
+                margin: 1.5rem 0 0 0;
+            }
+        }
+        @media only screen and (max-width: 750px) {
+            #hero h1, #hero h2 {
+                font-size: 48px;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            #hero h1, #hero h2 {
+                font-size: 36px;
+            }
+        }
+        @media only screen and (max-width: 375px) {
+            #centers #original, #fairview, #nampa {
+                width: 200px;
+            }
+            #buy-cars img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <img src="images/header_hy400bg.jpg" alt="Header image of a car">
+        <h1>BRONCO MOTORS</h1>
+        <h2>HYUNDAI BUY CENTERS</h2>
+    </section>
+
+    <section id="centers">
+        <div id="original">
+            <div class="location">
+                <div>
+                    <img src="images/location_icon.png" alt="Location Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>The Original <br> Downtwon Boise</h2>
+                    <p>2646 MAIN STREET <br> BOISE, ID 83702</p>
+                    <a href="https://www.broncomotorsoriginal.com/dealership/directions.htm" target="_blank">CLICK FOR DIRECTIONS</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="images/phone_icon.png" alt="Phone Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Contact</h2>
+                    <p>PH: (208) 856-1060</p>
+                </div>
+            </div>
+            <div class="hours">
+                <div>
+                    <img src="images/time_icon.png" alt="Clock Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Hours</h2>
+                    <p>Currently Closed</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fairview">
+            <div class="location">
+                <div>
+                    <img src="images/location_icon.png" alt="Location Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Hyundai <br> Fairview Location</h2>
+                    <p>9250 FAIRVIEW AVE. <br> BOISE, ID 83704</p>
+                    <a href="https://www.broncomotorshyundai.com/dealership/directions.htm" target="_blank">CLICK FOR DIRECTIONS</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="images/phone_icon.png" alt="Phone Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Contact</h2>
+                    <p>PH: (208) 423-1510</p>
+                </div>
+            </div>
+            <div class="hours">
+                <div>
+                    <img src="images/time_icon.png" alt="Clock Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Hours</h2>
+                    <p>Monday - Friday <br>  8:00 am - 5:00 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="nampa">
+            <div class="location">
+                <div>
+                    <img src="images/location_icon.png" alt="Location Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Hyundai <br> West - Nampa</h2>
+                    <p>15715 IDAHO CENTER BLVD <br> NAMPA, ID 83687</p>
+                    <a href="https://www.broncomotorshyundaiwest.com/dealership/directions.htm" target="_blank">CLICK FOR DIRECTIONS</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <img src="images/phone_icon.png" alt="Phone Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Contact</h2>
+                    <p>PH: (208) 696-0071</p>
+                </div>
+            </div>
+            <div class="hours">
+                <div>
+                    <img src="images/time_icon.png" alt="Clock Icon">
+                </div>
+                <div class="centers-content">
+                    <h2>Hours</h2>
+                    <p>Monday - Friday <br>  8:00 am - 5:00 pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="buy-cars">
+        <div>
+            <img src="images/bm_buycars_graphic.png" alt="">
+        </div>
+        <div>
+            <h1>LOOKING TO SELL YOUR CAR?</h1>
+            <p>Look no further than the Niello Buy Center. The Niello Company is the Sacramento area’s largest family-owned automotive group and now is an authorized Kelley Blue Book Buy Center. As a Kelley Blue Book authorized Buy Center – with eleven additional outlets – we are able to maximize the value of your car, truck or SUV. We’ve even simplified the process of selling your car into three easy steps.</p>
+        </div>
+    </section>
+
+    <h1 id="stepsheader">We Make Selling Your Vehicle Easy! <span class="orange">Three Easy Steps:</span></h1>
+    <section id="steps">
+        <div id="step1" data-aos="fade-up">
+            <img src="images/one_icon.png" alt="Image of the number 1">
+            <h1>Call the Bronco Motors Buy Center</h1>
+            <p>Call the Bronco Motors Center Downtown at (208) 856-1060 or our Fairview location at (208) 423-1510 or at our Nampa location at (208) 696-0071. Within minutes a representative will provide you with a market evaluation of your vehicle.</p>
+        </div>
+
+        <div id="step2" data-aos="fade-up">
+            <img src="images/two_icon.png" alt="Image of the number 2">
+            <h1>Come See Us</h1>
+            <p>Bring your vehicle into either one of our three convienent locationsf or final inspection.</p>
+        </div>
+
+        <div id="step3" data-aos="fade-up">
+            <img src="images/three_icon.png" alt="Image of the number 3">
+            <h1>Sign and Done!</h1>
+            <p>Finalize your sale and receive your funds. We’ll even drive you home!</p>
+        </div>
+    </section>
+
+    <!-- JavaScript for Animate on Scroll -->
+    <script>AOS.init({
+        easing: 'ease-in-out',
+        duration: 800,
+        delay: 350,
+        disable: 'mobile'
+    });</script>
+</body>
+</html>
